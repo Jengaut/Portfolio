@@ -189,7 +189,13 @@ ul li {
   font-weight: bold;
 }
 
-/*------------INDEX--------------------*/
+/*------------autre page--------------------*/
+
+h1 {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
 
 /* --------------------version telephone --------------------------*/
 
