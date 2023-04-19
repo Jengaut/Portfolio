@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joie de vivre à Verdun!</title>
+  <link rel="stylesheet" href="css/styles.css" media="screen">
+  <link rel="stylesheet" href="css/impression.css" media="print" />
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+
+</head>
+
+<body class="body-accueil">
+  <div id="image-acceuil">
+    <div class="box">
+
+      <div id="img">
+        <img src="images/logo.png" width="200" height="200" alt="Logo" />
+      </div>
+
+      <div class="titre">
+        <h1>Joie de vivre à Verdun!</h1>
+        <h2>On peut même y trouver des amis!</h2>
+      </div>
+
+      <nav class="nav-acceuil">
+        <ul>
+          <li class="fr"><a href="fr/index.html"><span>FR</span></a></li>
+          <li class="en"><a href="en/index.html"><span>ENG</span></a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+  <footer class="end">
+    <p>&#169; Tous droits réservés 2022, Joie de vivre à Verdun!</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script>
+    window.onload = function () {
+      setAltLanguageLink();
+    }
+  </script>
+
+</body>
+
+</html>

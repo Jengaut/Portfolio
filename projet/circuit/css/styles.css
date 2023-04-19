@@ -1,0 +1,604 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+html {
+  font: 100%/150% Poppins, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+ul li a {
+  font: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* --------------------- debut acceuil ------------------------ */
+
+.body-accueil {
+  min-height: 100%;
+}
+
+#image-acceuil {
+  background: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.7) 42%,
+      rgba(255, 255, 255, 0.89) 65%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(../images/interface/accueil.jpg) no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  margin: 0;
+  padding: 10%;
+  box-sizing: border-box;
+}
+
+.box {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+#img {
+  display: flex;
+  justify-content: center;
+}
+
+#img img {
+  background-color: #ffffff98;
+  border-radius: 50%;
+}
+
+.titre {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.nav-acceuil ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10% 30%;
+}
+
+.en span {
+  color: #008b8b;
+  padding: 1rem;
+  font-size: large;
+}
+
+.fr span {
+  color: #008b8b;
+  padding: 1rem;
+  font-size: large;
+}
+
+.nav-acceuil ul li {
+  background-color: #ffffff80;
+  height: auto;
+  border: 4px solid #008b8b;
+  padding: 1rem;
+  text-align: center;
+}
+
+.end {
+  height: 10vh;
+  box-sizing: border-box;
+  text-decoration: underline;
+  width: 100%;
+  background-color: #808080;
+  padding: 1rem;
+  color: #fff;
+}
+
+.end p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/* --------------------- fin acceuil ------------------------ */
+
+/* --------------------- debut heather ------------------------ */
+
+#image-header {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(160, 160, 160, 0.5) 100%
+    ),
+    url(../images/interface/haut-de-page.jpg) no-repeat left center;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+#alt-linguistique {
+  height: auto;
+  border: 1px solid #008b8b;
+  padding: 0.7rem 0.3rem;
+  text-decoration: none;
+}
+
+#alt-linguistique span {
+  color: #fff;
+  background-color: #008b8b;
+  padding: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0 0 3rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .navigation ul {
+  display: flex;
+}
+
+.nav .navigation ul li {
+  padding-right: 0.5rem;
+}
+
+.nav .navigation a {
+  border-right: 1px solid #008b8b;
+  border-bottom: 1px solid #008b8b;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.25rem 0.25rem 0.5rem;
+  color: #008b8b;
+  background-color: #ffffff70;
+  border-top-left-radius: 0.5rem;
+}
+
+.nav .navigation a:before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background: #008b8b;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav .navigation a:hover {
+  margin: 0 0.3rem;
+  transform: scale(1.1);
+}
+
+.head-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.head-logo img {
+  background-color: #ffffff98;
+  border-radius: 50%;
+}
+
+header {
+  border-bottom: 2rem solid #008b8b;
+  margin: 0;
+}
+
+/* --------------------- fin heather ------------------------ */
+
+/* --------------------- debut main ------------------------ */
+
+main {
+  border: 3rem;
+  border-color: #008b8b;
+}
+
+.contenu {
+  padding: 5%;
+}
+
+.contenu img {
+  border-radius: 2rem;
+}
+
+.contenu h1 {
+  padding: 0 0 10%;
+}
+
+.titre-encadrement {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.titre-encadrement span {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 0.5rem 0.5rem 0;
+}
+
+.titre-encadrement span:before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+section img {
+  display: block;
+}
+
+section {
+  padding-bottom: 10%;
+}
+
+.contenu h2 {
+  color: #008b8b;
+  text-transform: uppercase;
+}
+
+.container p {
+  color: #ffffff;
+  font: italic smaller sans-serif;
+  text-align: left;
+}
+
+.container {
+  position: relative;
+  padding: 1rem 3rem 1.5rem 0;
+}
+.a-coter {
+  padding: 1rem 1.5rem;
+}
+
+.center {
+  background-color: #008b8b90;
+  position: absolute;
+  width: 400px;
+  color: white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  bottom: 1.5rem;
+}
+
+.center p {
+  text-align: center;
+}
+
+.formulaire {
+  margin: auto;
+  width: 70%;
+  border: 3px solid #000;
+  padding: 20px 30px;
+  border-radius: 2rem;
+}
+
+.formulaire h3 {
+  color: #008b8b;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.required {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.flex > label {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.flex > input,
+label,
+.label {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.required:after {
+  content: "*";
+  color: #cc0000;
+}
+
+.normal {
+  display: contents;
+}
+
+.flex label,
+.label {
+  color: #008b8b;
+}
+
+.flex .normal {
+  color: #000;
+}
+
+.flex input[type="text"],
+textarea {
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: .5rem;
+}
+
+.flex input[type="email"] {
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: .5rem;
+}
+
+.flex input[type="submit"] {
+  margin-left: 1rem;
+  background-color: #008b8b;
+  border-radius: 0.5rem;
+  font-size: larger;
+  color: #ffffff;
+  border: 2px solid #000;
+  transition: all 0.5s;
+}
+
+.flex input[type="submit"]:hover {
+  transform: scale(1.2);
+}
+
+.flex input[type="reset"] {
+  margin-left: 1rem;
+  background-color: #008b8b;
+  border-radius: 0.5rem;
+  font-size: larger;
+  color: #ffffff;
+  border: 2px solid #000;
+}
+
+.h2 {
+  text-align: center;
+}
+
+.presentation {
+  position: relative;
+}
+
+.presentation img {
+  width: 100%;
+  display: block;
+}
+
+.presentation-p {
+  position: absolute;
+  background-color: #008b8b90;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 0.5rem;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*.cache {
+  display: none;
+}*/
+
+
+.prev {
+  width: 45%;
+  margin: 0 0 0 2rem;
+  background-color: #008b8b;
+  color: #fff;
+  font-size: large;
+  border-radius: .5rem;
+}
+
+.next {
+  width: 45%;
+  background-color: #008b8b;
+  color: #fff;
+  font-size: large;
+  border-radius: .5rem;
+}
+
+#btn1, #btn2, #btn3 {
+  margin: 2rem 0;
+  background-color: #008b8b;
+  color: #fff;
+  font-size: large;
+  border-radius: .5rem;
+}
+
+/* --------------------- fin main ------------------------ */
+
+/* --------------------- debut footer ------------------------ */
+
+footer {
+  border-top: 2rem solid #008b8b;
+  margin: 0;
+}
+
+.page {
+  background-color: #808080;
+  padding: 1rem 1rem;
+  margin-top: 0;
+  color: white;
+}
+
+.info-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page .image-cropper {
+  border: 0.5rem solid #008b8b;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.page .moi {
+  display: inline;
+  margin: 0 auto;
+  margin-top: -30%;
+  margin-left: -10%;
+  height: 200%;
+  width: auto;
+}
+
+.info {
+  padding: 0 3rem;
+}
+
+.button img {
+  height: 50px;
+  display: block;
+  margin: 2rem;
+}
+
+/* début formulaire */
+
+#to-be-change {
+  padding: 5%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#to-be-change .maintenance {
+  text-align: center;
+  padding: 20px;
+  font: 20px Poppins;
+  color: #333;
+}
+
+#to-be-change article {
+  display: block;
+  text-align: left;
+  max-width: 650px;
+  margin: 0 auto;
+}
+#to-be-change article a {
+  color: #dc8100;
+  text-decoration: none;
+}
+
+/* fin formulaire */
+
+/* --------------------- fin footer ------------------------ */
+
+/* -------------------- début media ------------------------*/
+
+@media screen and (max-width: 664px) {
+  h1,
+  h2,
+  h3 {
+    line-height: 2rem;
+  }
+
+  .nav-acceuil ul {
+    display: block;
+  }
+  .nav-acceuil ul li {
+    margin: 2rem 0;
+    padding: 5% 15%;
+  }
+  .titre {
+    line-height: 2rem;
+  }
+  .end {
+    font-size: smaller;
+  }
+  .nav {
+    display: block;
+    align-items: flex-start;
+  }
+
+  .nav .navigation ul {
+    display: block;
+    align-items: flex-start;
+  }
+  .nav .navigation ul li {
+    padding: 0.5rem 0 0.5rem;
+  }
+  .head-logo {
+    display: block;
+  }
+
+  .info-page {
+    display: block;
+  }
+
+  .info {
+    padding: 0 1rem;
+  }
+
+  .social {
+    display: flex;
+  }
+
+  section {
+    padding-bottom: 10%;
+  }
+  .nav .navigation a:hover {
+    margin: 0;
+    transform: none;
+  }
+}
+
+#button .prev {
+  margin: 0 ;
+ 
+}
+
+@media screen and (min-width: 928px) {
+  .a-coter {
+    margin: 0;
+    padding: 1 1.5rem;
+  }
+
+  section {
+    column-count: 2;
+    padding: 0 5% 5%;
+    text-align: left;
+    column-gap: 40px;
+    column-width: 100px;
+  }
+
+  section h2 {
+    line-height: 2rem;
+  }
+
+  section audio {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+/* -------------------- fin media ------------------------*/

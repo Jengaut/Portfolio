@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joie de vivre à Verdun!</title>
+	<link rel="stylesheet" href="../css/styles.css" media="screen">
+	<link rel="stylesheet" href="../css/impression.css" media="print" />
+	<link rel="stylesheet" href="../node_modules/mediaelement/build/mediaelementplayer.min.css">
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+	<script src="../node_modules/mediaelement/build/mediaelement-and-player.min.js"></script>
+</head>
+
+<body>
+
+	<header id="image-header">
+
+		<nav class="nav">
+
+			<div class="en-nav">
+				<div>
+					<a href="#" lang="en" title="English version" id="alt-linguistique"
+						data-location-id="page-principale"><span>ENG</span></a>
+				</div>
+			</div>
+
+			<div class="navigation">
+				<ul>
+					<li><a href="../index.html">Acceuil</a></li>
+					<li><a href="../fr/index.html">Principal</a></li>
+					<li><a href="../fr/presentation.html">Présentation</a></li>
+					<li><a href="../fr/suggerer-lieu.html">Suggérer un lieu</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="head-logo">
+			<div>
+				<img src="../images/logo.png" width="100" height="100" alt="Logo" />
+			</div>
+			<div class="head-text">
+				<h1>Joie de vivre à Verdun!</h1>
+				<h2>On peut même y trouver des amis!</h2>
+			</div>
+		</div>
+	</header>
+
+	<main class="contenu">
+
+		<h1 class="titre-encadrement"><span>Points d'intérêts</span></h1>
+
+		<div id="button">
+			<button class="prev">Précédent</button>
+			<button class="next">Suivant</button>
+		</div>
+
+		<div id="carrousel">
+
+			<section class="item">
+				<div class="inner">
+
+					<div class="container">
+						<img src="../images/image-1.jpg" alt="petanque" />
+
+						<div class="center">
+							<p>Terrain de pétanque au bord de l'eau de Verdun</p>
+							<p class="print">Tous droits réservés 2022, Jennifer Gauthier</p>
+						</div>
+					</div>
+					<div class="a-coter">
+
+						<h2>La vengeance est un plat qui se mange froid, Pétanque! </h2>
+						<audio src="../audio/petanque.mp3" controls preload="none"></audio>
+
+						<button id="btn1">Montrer détail</button>
+
+						<p id="para1" style="display: none;">Pour les amateurs de sports! Non je rigole.
+							Pour ceux qui n’ont pas de gène sportif
+							comme moi, la pétanque est un jeu formidable
+							pour ce d’étendre et profiter du vent frais du
+							bord de l’eau. À la pétanque, l'objectif est de marquer des points
+							en plaçant ses boules plus près du but que son adversaire par
+							rapport au cochonnet. Vous pouvez jouer à trois contre trois,
+							deux contre deux ou un contre un. Il vous faut un set de six boules,
+							un cochonnet plus petit que les boules et un cordon de mesure et le tour est joué.</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="item">
+				<div class="inner">
+
+					<div class="container">
+						<img src="../images/image-2.jpg" alt="verdun-beach" />
+						<div class="center">
+							<p>Magnifique vue de la plage de Verdun</p>
+							<p class="print">Tous droits réservés 2022, Jennifer Gauthier</p>
+						</div>
+					</div>
+
+					<div class="a-coter">
+
+						<h2>Se chauffer la couenne à la plage de Verdun</h2>
+						<audio src="../audio/plage.mp3" controls preload="none"></audio>
+
+					    <button id="btn2">Montrer détail</button>
+
+						<p id="para2" style="display: none;">Un petit bronzage et une bonne plage! La
+							plage de Verdun est l’endroit par excellence
+							pour se relaxer et se rafraîchir. Accessible en fauteuil roulant!
+							Située à deux pas de la station
+							de métro De L’Église, derrière l’Auditorium de Verdun, la plage
+							urbaine de Verdun offre un accès unique au fleuve Saint-Laurent
+							et à ses rives.</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="item">
+				<div class="inner">
+
+					<div class="container">
+						<img src="../images/image-3.jpg" alt="restaurants" />
+						<div class="center">
+							<p>Terrasse du bar Palco à Verdun</p>
+							<p class="print">Tous droits réservés 2022, Jennifer Gauthier</p>
+						</div>
+					</div>
+					<div class="a-coter">
+
+						<h2>Le Palco, c’est mon restau!</h2>
+						<audio src="../audio/palco.mp3" controls preload="none"></audio>
+
+					    <button id="btn3">Montrer détail</button>
+
+
+						<p id="para3" style="display: none;">Pourquoi pas un bon petit cocktail en fin de
+							soirée! Et même si tu as un(e) ami(e) qui
+							préfère les bonnes bière et bien vous serez
+							servis avec une bière de microbrasserie
+							québécoise. Le Palco n'est pas un simple bar de quartier, mais un lieu
+							d’échanges et de fête au décor capitonné.
+							Au menu, des cocktails signatures, une gourmande
+							sélection de spiritueux, des vins d’importation privée et
+							des bières de microbrasserie. À la carte,
+							des plats simples, mais généreux. Au programme, des événements qui
+							mettent à l’honneur l’art et la musique.</p>
+					</div>
+
+
+				</div>
+			</section>
+
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="page">
+			<div class="info-page">
+				<div class="image-cropper">
+					<img src="../images/interface/moi.jpg" alt="Verdun" class="moi" />
+				</div>
+				<div class="info">
+					<p>jennifer@hotmail.com</p>
+					<p>Tel: 444-444-4444</p>
+					<p>777 rue Alfonce, Verdun QC<br>
+						H1H 1H1</p>
+				</div>
+
+				<div class="social">
+					<a href="#" class="button"><img alt="fb" src="../images/interface/fb.png" /></a>
+					<a href="#" class="button"><img alt="insta" src="../images/interface/insta.png" /></a>
+				</div>
+			</div>
+
+			<p>&#169; Tous droits réservés 2022, Joie de vivre à Verdun!</p>
+
+		</div>
+
+	</footer>
+
+	<script src="../js/scripts.js"></script>
+	<script>
+		window.onload = function () {
+			setAltLanguageLink();
+			putJCycleCarrousel();
+			$('audio').mediaelementplayer({
+				stretching: "auto",
+			});
+		}
+	</script>
+
+</body>
+
+</html>

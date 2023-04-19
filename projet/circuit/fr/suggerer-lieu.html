@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joie de vivre à Verdun!</title>
+    <link rel="stylesheet" href="../css/styles.css" media="screen">
+    <link rel="stylesheet" href="../css/impression.css" media="print" />
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="image-header">
+
+        <nav class="nav">
+
+            <div class="en-nav">
+                <div>
+                    <a href="#" lang="en" title="English version" id="alt-linguistique"
+                        data-location-id="suggerer-lieu"><span>ENG</span></a>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <ul>
+                    <li><a href="../index.html">Acceuil</a></li>
+                    <li><a href="../fr/index.html">Principal</a></li>
+                    <li><a href="../fr/presentation.html">Présentation</a></li>
+                    <li><a href="../fr/suggerer-lieu.html">Suggérer un lieu</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="head-logo">
+            <div>
+                <img src="../images/logo.png" width="100" height="100" alt="Logo" />
+            </div>
+            <div class="head-text">
+                <h1>Joie de vivre à Verdun!</h1>
+                <h2>On peut même y trouver des amis!</h2>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenu">
+        <h1 class="titre-encadrement"><span>Suggérer un lieu</span></h1>
+
+        <div class="formulaire">
+
+            <h3>Propose moi quelque chose d'amusant!</h3>
+
+            <div class="flex">
+
+                <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+                    <p>
+                        <label for="titre">Titre</label>
+                        <input type="text" name="titre" size="72" id="titre" required />
+                    </p>
+
+                    <p>
+                        <label for="accroche">Accroche</label>
+                        <textarea name="accroche" cols="72" rows="4" id="accroche" required></textarea>
+                    </p>
+                    <p>
+                        <label for="description">Description</label>
+                        <textarea name="description" rows="10" cols="72" row='10' id="description" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="imagefile">Une image pour nous montrer? :</label>
+                        <input type="file" name="image" id="imagefile" capture accept="image/*">
+                    </p>
+
+                    <p>
+                        <label for="clip-audio">Et pourquoi pas un son :</label>
+                        <input type="file" name="clip-audio" id="clip-audio" capture accept="audio/*">
+                    </p>
+
+                    <p><label for="liste">Langue</label>
+                        <select name="liste" id="liste">
+                            <option value="">Choisir une option...</option>
+                            <option value="choix1" selected="selected">Français</option>
+                            <option value="choix2">Anglais</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="courriel">Courriel</label>
+                        <input type="email" name="courriel" id="courriel" required />
+                    </p>
+                    <p>
+                        <input type="submit" value="Envoyer" />
+                        <input type="reset" value="Effacer" />
+                    </p>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="page">
+            <div class="info-page">
+                <div class="image-cropper">
+                    <img src="../images/interface/moi.jpg" alt="Verdun" class="moi" />
+                </div>
+                <div class="info">
+                    <p>jennifer@hotmail.com</p>
+                    <p>Tel: 444-444-4444</p>
+                    <p>777 rue Alfonce, Verdun QC<br>
+                        H1H 1H1</p>
+                </div>
+
+                <div class="social">
+                    <a href="#" class="button"><img alt="fb" src="../images/interface/fb.png" /></a>
+                    <a href="#" class="button"><img alt="insta" src="../images/interface/insta.png" /></a>
+                </div>
+            </div>
+
+            <p>&#169; Tous droits réservés 2022, Joie de vivre à Verdun!</p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        window.onload = function () {
+            setAltLanguageLink();
+            decorateLabels();
+        }
+    </script>
+
+</body>
+
+</html>

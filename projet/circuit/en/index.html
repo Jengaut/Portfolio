@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy of living in Verdun!</title>
+    <link rel="stylesheet" href="../css/styles.css" media="screen">
+    <link rel="stylesheet" href="../css/impression.css" media="print" />
+	<link rel="stylesheet" href="../node_modules/mediaelement/build/mediaelementplayer.min.css">
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+	<script src="../node_modules/mediaelement/build/mediaelement-and-player.min.js"></script>
+</head>
+
+<body>
+    <header id="image-header">
+
+        <nav class="nav">
+
+            <div class="en-nav">
+                <div>
+                    <a href="#" lang="fr" title="Version francaise" id="alt-linguistique"
+                        data-location-id="page-principale"><span>FR</span></a>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <ul>
+                    <li><a href="../index.html">Home page</a></li>
+                    <li><a href="../en/index.html">Main page</a></li>
+                    <li><a href="../en/presentation.html">Presentation</a></li>
+                    <li><a href="../en/suggest-location.html">Suggest a location</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="head-logo">
+            <div>
+                <img src="../images/logo.png" width="100" height="100" alt="Logo" />
+            </div>
+            <div class="head-text">
+                <h1>Joy of living in Verdun!</h1>
+                <h2>You can even find friends!</h2>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="contenu">
+
+        <h1 class="titre-encadrement"><span>Points of interest</span></h1>
+
+        <div id="button">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </div>
+
+        <div id="carrousel">
+
+            <section class="item">
+                <div class="inner">
+
+                    <div class="container">
+
+                        <img src="../images/image-1.jpg" alt="petanque" />
+                        <div class="center">
+                            <p>Petanque court at the water's edge of Verdun</p>
+                            <p class="print">All rights reserved 2022, Jennifer Gauthier</p>
+                        </div>
+
+                    </div>
+                    <div class="a-coter">
+                        <h2>Revenge is a dish best served cold, Petanque!</h2>
+                        <audio src="../audio/petanque.mp3" controls preload="none"></audio>
+
+                        <button id="btn1">Show details</button>
+
+						<p id="para1" style="display: none;">For sports lovers! No I'm kidding.
+                            For those who don't have a sporty gene like me,
+                            petanque is a great game to stretch out and enjoy the
+                            fresh wind from the water's edge. In petanque,
+                            the objective is to score points by placing your balls closer
+                            to the goal than your opponent in relation to the jack.
+                            You can play three on three, two on two or one on one.
+                            You need a set of six balls, a jack smaller than the balls
+                            and a measuring cord and you're done.</p>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="item">
+                <div class="inner">
+
+                    <div class="container">
+
+                        <img src="../images/image-2.jpg" alt="verdun-beach" />
+                        <div class="center">
+
+                            <p>Magnificent view of Verdun beach</p>
+                            <p class="print">All rights reserved 2022, Jennifer Gauthier</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="a-coter">
+
+                        <h2>Warm up your rind at Verdun beach</h2>
+                        <audio src="../audio/plage.mp3" controls preload="none"></audio>
+
+                        <button id="btn2">Show details</button>
+
+						<p id="para2" style="display: none;">A little tan and a good beach! Verdun beach is the
+                            perfect place to relax and cool off. Wheelchair accessible!
+                            Located a stone's throw from the De L'Eglise metro station,
+                            behind the Verdun Auditorium, Verdun's urban beach offers
+                            unique access to the Saint-Laurent River and its shores.</p>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="item">
+                <div class="inner">
+
+                    <div class="container">
+
+                        <img src="../images/image-3.jpg" alt="restaurants" />
+                        <div class="center">
+
+                            <p>Terrace of the Palco bar in Verdun</p>
+                            <p class="print">All rights reserved 2022, Jennifer Gauthier</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="a-coter">
+
+                        <h2>Palco is my restau!</h2>
+                        <audio src="../audio/palco.mp3" controls preload="none"></audio>
+
+                        <button id="btn3">Show details</button>
+
+						<p id="para3" style="display: none;">How about a good little cocktail at the end of the evening!
+                            And even if you have a friend who prefers good beer,
+                            you will be served with a Quebec microbrewery beer. The
+                            Palco is not just a neighborhood bar, but a place of exchange
+                            and celebration with a padded decor. On the menu, signature
+                            cocktails, a gourmet selection of spirits, privately imported
+                            wines and microbrewery beers. On the menu, simple but generous
+                            dishes. On the program, events that showcase art and music.</p>
+
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="page">
+            <div class="info-page">
+                <div class="image-cropper">
+                    <img src="../images/interface/moi.jpg" alt="Verdun" class="moi" />
+                </div>
+                <div class="info">
+                    <p>jennifer@hotmail.com</p>
+                    <p>Tel: 444-444-4444</p>
+                    <p>777 Alfonce Street, Verdun QC<br>
+                        H1H 1H1</p>
+                </div>
+
+                <div class="social">
+                    <a href="#" class="button"><img alt="fb" src="../images/interface/fb.png" /></a>
+                    <a href="#" class="button"><img alt="insta" src="../images/interface/insta.png" /></a>
+                </div>
+            </div>
+
+            <p>&#169; All rights reserved 2022, Joy of living in Verdun!</p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+		window.onload = function () {
+			setAltLanguageLink();
+			putJCycleCarrousel();
+			$('audio').mediaelementplayer({
+				stretching: "auto",
+			});
+		}
+	</script>
+</body>
+
+</html>
