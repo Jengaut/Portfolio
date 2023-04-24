@@ -164,7 +164,7 @@ ul li {
   cursor: pointer;
   background-color: #ccdbdc;
   color: #003249;
-  font-size: 30;
+  font-size: 35;
 }
 
 #lang{
@@ -292,8 +292,8 @@ h1 {
   }
   
   .lang {
-    padding: 1.3rem;
-    font-size: 20;
+    padding: 1rem;
+    font-size: 15;
     border-radius: 0;
   }
 
