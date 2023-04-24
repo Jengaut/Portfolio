@@ -10,7 +10,7 @@ pagePrincipale.addEventListener("mouseover", function () {
 
 menuListe.addEventListener("mouseover", () => {
   if (!menuListe.classList.contains("visible")) {
-    hamburgerMenu.style.transform = "scale(1.1)";
+    hamburgerMenu.style.transform = "scale(1)";
   }
 });
 

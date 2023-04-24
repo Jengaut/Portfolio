@@ -31,14 +31,14 @@ ul li {
 
 #mon-nom {
   margin: auto;
-  padding-left: 6.7%;
+  padding-left: 7%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 15px;
   width: 100%;
-  padding-top: 4rem;
-  font-size: 35;
+  padding-top: 7rem;
+  font-size: 33;
 }
 
 #prenom {
@@ -53,34 +53,32 @@ ul li {
   position: absolute;
   padding: 4rem;
   justify-content: center;
-  line-height: 4rem;
+  line-height: 3.7rem;
   text-transform: uppercase;
   text-align: center;
   color: #007EA7;
-  top: 30%;
+  top: 32%;
   left: 60%;
-  background-color: #ccdbdc50;
-  border-radius: 1rem;
-  transform: scale(1.2);
+  font-size: 33;
 }
 
 #flex {
   margin: auto;
-  left: 1.5vw;
+  left: 3.2vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
   justify-content: center;
   position: absolute;
-  top: 50%;
+  top: 57%;
   transform: translateY(-50%);
 }
 
 #page-principale {
   position: relative;
-  width: 625px;
-  height: 625px;
+  width: 475px;
+  height: 475px;
   overflow: hidden;
   border-radius: 50%;
   transform: perspective(800px) rotateY(0deg);
@@ -115,7 +113,7 @@ ul li {
 }
 
 #page-principale-menu {
-  margin-left: 5vw;
+  margin-left: 4vw;
   padding: 0;
   float: right;
   height: 630px;
@@ -141,8 +139,8 @@ ul li {
 #page-principale-menu ul li {
   list-style: none;
   text-decoration: none;
-  margin: 1rem 1rem 1rem 0;
-  padding: 3rem 0;
+  margin: .75rem .75rem .75rem 0;
+  padding: 2rem 0;
 }
 
 #page-principale-menu ul li:hover {
@@ -150,8 +148,8 @@ ul li {
 }
 
 #page-principale-menu ul li a {
-  font-size: x-large;
-  padding: 2.5rem 2rem;
+  font-size: 20;
+  padding: 1.8rem 2rem;
   text-decoration: none;
   list-style: none;
   color: white;
@@ -164,7 +162,7 @@ ul li {
   display: none;
   float: right;
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 40;
   background: none;
   border: none;
   cursor: pointer;
@@ -179,13 +177,13 @@ ul li {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 3rem;
+  padding: 2.5rem;
   text-decoration: none;
   list-style: none;
   color:#007EA7;
   background-color: #ccdbdc;
   border-radius: 0 50% 50% ;
-  font-size: 40;
+  font-size: 30;
   font-weight: bold;
 }
 
@@ -199,7 +197,7 @@ h1 {
 
 /* --------------------version telephone --------------------------*/
 
-@media screen and (max-width: 1173px) {
+@media screen and (max-width: 956px) {
   body {
     margin: 0;
     background-color: #003249;
@@ -221,9 +219,9 @@ h1 {
 }
 
 #mon-nom {
-  padding-top: 2rem;
+  padding-top: .8rem;
   padding-left: 0;
-  font-size: 3.5vw;
+  font-size: 2.7vw;
   gap: 2vw;
 }
 
@@ -239,18 +237,20 @@ h1 {
   }
 
   #page-principale {
-    max-width: 650px;
-    max-height: 650px;
+    max-width: 500px;
+    max-height: 500px;
     width: 80vw;
     height: 80vw;
     padding-bottom: 0;
+    z-index: 0;
   }
 
   #page-principale-menu {
     margin: 0;
     padding: 0;
     height: auto;
-    z-index: 1;
+    width: 100%;
+    z-index: 0;
   }
 
   #page-principale-menu ul {
@@ -276,22 +276,26 @@ h1 {
 
   #page-principale-menu ul li a {
     display: block;
-    font-size: 1.98vh;
-    padding: 3vh 10.6vh;
+    margin: 0;
+    width: 100%;
+    font-size: 1.5vh;
+    padding: 3vh;
     text-decoration: none;
     color: #fff;
     background-color: #003249;
     border-radius: 0;
+    z-index: 0;
   }
 
   #lang{
     display: block;
     margin: 0;
+    z-index: 0;
   }
   
   .lang {
-    padding: 4vw;
-    font-size: 4vw;
+    padding: 1.3rem;
+    font-size: 20;
     border-radius: 0;
   }
 
@@ -307,5 +311,9 @@ h1 {
 
   #page-principale-menu ul.visible ~ #hamburger-menu {
     color: #ccdbdc;
+  }
+
+  #page-principale-menu ul li:hover {
+    transform: scale(1);
   }
 }
