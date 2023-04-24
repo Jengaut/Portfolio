@@ -159,13 +159,12 @@ ul li {
 }
 
 #hamburger-menu {
-  display: none;
   float: right;
-  margin-top: 1rem;
-  font-size: 40;
-  background: none;
   border: none;
   cursor: pointer;
+  background-color: #ccdbdc;
+  color: #003249;
+  font-size: 30;
 }
 
 #lang{
@@ -277,7 +276,6 @@ h1 {
   #page-principale-menu ul li a {
     display: block;
     margin: 0;
-    width: 100%;
     font-size: 1.5vh;
     padding: 3vh;
     text-decoration: none;
@@ -287,7 +285,7 @@ h1 {
     z-index: 0;
   }
 
-  #lang{
+  #lang {
     display: block;
     margin: 0;
     z-index: 0;
@@ -302,7 +300,6 @@ h1 {
   #hamburger-menu {
     display: block;
     margin: 0;
-    background-color: #ccdbdc;
   }
 
   #hamburger-menu span {
