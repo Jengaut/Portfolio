@@ -159,6 +159,7 @@ ul li {
 }
 
 #hamburger-menu {
+  display: none;
   float: right;
   border: none;
   cursor: pointer;
@@ -167,15 +168,27 @@ ul li {
   font-size: 35;
 }
 
-#lang{
+#lang-index {
   position: relative;
   z-index: 1;
 }
 
-.lang {
+.lang-index {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 2.5rem;
+  text-decoration: none;
+  list-style: none;
+  color:#007EA7;
+  background-color: #ccdbdc;
+  border-radius: 0 50% 50% ;
+  font-size: 30;
+  font-weight: bold;
+}
+
+.lang {
+  margin: 3rem 3rem;
   padding: 2.5rem;
   text-decoration: none;
   list-style: none;
@@ -283,6 +296,18 @@ h1 {
     background-color: #003249;
     border-radius: 0;
     z-index: 0;
+  }
+
+  #lang-index {
+    display: block;
+    margin: 0;
+    z-index: 0;
+  }
+  
+  .lang-index {
+    padding: 1rem;
+    font-size: 15;
+    border-radius: 0;
   }
 
   #lang {
