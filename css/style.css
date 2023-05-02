@@ -164,6 +164,7 @@ ul li {
   display: none;
 }
 
+
 #lang-index {
   position: relative;
   z-index: 1;
@@ -296,6 +297,22 @@ ul li {
   font-size: 1.3vw;
 }
 
+/* --------------------developpement web --------------------------*/
+
+
+#jeux{
+  width: 60%;
+  height: 100%;
+}
+
+#github-username{
+  text-decoration: none;
+  list-style: none;
+  font-size: 20;
+  color: #003249;
+  font-weight: 800;
+}
+
 /* --------------------version telephone --------------------------*/
 
 @media screen and (max-width: 956px) {
@@ -348,78 +365,6 @@ ul li {
     z-index: 0;
   }
 
-  #page-principale-menu-hamburger {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100%;
-  }
-
-  #page-principale-menu-hamburger ul {
-    display: none;
-    width: 100%;
-    margin-top: 10vh;
-  }
-
-  #page-principale-menu-hamburger ul.visible {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100;
-  }
-
-  #page-principale-menu-hamburger ul li {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  #page-principale-menu-hamburger ul li a {
-    display: block;
-    margin: 0;
-    font-size: 1.5vh;
-    padding: 3vh;
-    text-decoration: none;
-    color: #fff;
-    background-color: #003249;
-    border-radius: 0;
-  }
-
-  #hamburger-menu {
-    display: block;
-    margin: 0;
-    float: right;
-    border: none;
-    cursor: pointer;
-    background-color: #ccdbdc;
-    color: #003249;
-    font-size: 35;
-  }
-
-  #hamburger-menu span {
-    background-color: #ccdbdc;
-  }
-
-
-  #page-principale-menu-hamburger{
-    float: right;
-    border: none;
-    cursor: pointer;
-    background-color: #ccdbdc;
-    color: #003249;
-    font-size: 35;
-  }
-
-  #page-principale-menu-hamburger ul.visible + #hamburger-menu {
-    color: #ccdbdc;
-  }  
-
-  #page-principale-menu-hamburger ul li:hover {
-    transform: scale(1);
-  }
-
   #page-principale-menu {
     display: none;
   }
@@ -431,18 +376,6 @@ ul li {
   }
 
   .lang-index {
-    padding: 1rem;
-    font-size: 15;
-    border-radius: 0;
-  }
-
-  #lang {
-    display: block;
-    margin: 0;
-    z-index: 0;
-  }
-
-  .lang {
     padding: 1rem;
     font-size: 15;
     border-radius: 0;
@@ -462,6 +395,7 @@ ul li {
   #telephone3 {
     width: 100%;
     height: 100%;
+    border: 2rem solid #003249;
   }
 
   #menu {
@@ -471,4 +405,55 @@ ul li {
   #lang {
     display: none;
   }
+
+#hamburger-menu {
+  display: block;
+  margin: 0;
+  float: right;
+  border: none;
+  cursor: pointer;
+  background-color: #ccdbdc;
+  color: #003249;
+  font-size: 35;
+}
+
+#page-principale-menu-hamburger {
+  display: none;
+  position:relative;
+  margin-top: 2vh;
+  top: 0;
+  right: 0;
+  background-color: #ccdbdc;
+  color: #003249;
+  width: 100%;
+  height: auto;
+  font-size: 35;
+}
+
+#page-principale-menu-hamburger nav {
+  margin: 0;
+  padding: 0;
+}
+
+#page-principale-menu-hamburger ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#page-principale-menu-hamburger li {
+  margin: 0;
+  padding: 0;
+}
+
+#page-principale-menu-hamburger a {
+  display: block;
+  color: #fff;
+  font-size: 1.5vh;
+  padding: 20px;
+  text-decoration: none;
+  background-color: #003249;
+  text-align: center;
+}
+
 }

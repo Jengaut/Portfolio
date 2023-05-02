@@ -1,38 +1,28 @@
-const pagePrincipale = document.getElementById("page-principale");
-const menuListe = document.querySelector("#page-principale-menu ul");
-const menuHamburger = document.querySelector("#page-principale-menu-hamburger")
-const hamburgerMenu = document.querySelector("#hamburger-menu");
-const titre = document.getElementById("titre");
+const pagePrincipale = document.getElementById('page-principale');
+const menuListe = document.querySelector('#page-principale-menu ul');
+const titre = document.getElementById('titre');
 
-pagePrincipale.addEventListener("mouseover", function () {
-  menuListe.style.transform = "translateX(0%)";
-  titre.style.display = "none";
+pagePrincipale.addEventListener('mouseover', function() {
+  menuListe.style.transform = 'translateX(0%)';
+  titre.style.display = 'none';
 });
 
-menuHamburger.addEventListener("mouseover", () => {
-  if (!menuHamburger.classList.contains("visible")) {
-    hamburgerMenu.style.transform = "scale(1)";
-  }
-});
-
-menuHamburger.addEventListener("mouseout", () => {
-  if (!menuHamburger.classList.contains("visible")) {
-    hamburgerMenu.style.transform = "scale(1)";
-  }
-});
-
-hamburgerMenu.addEventListener("click", () => {
-  menuHamburger.classList.toggle("visible");
-});
-
-menuListe.querySelectorAll("li a").forEach((link) => {
-  link.addEventListener("click", () => {
-    menuListe.classList.remove("visible");
+document.querySelectorAll('#page-principale-menu li a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    menuListe.classList.remove('visible');
   });
 });
 
-document.querySelectorAll("#page-principale-menu li a").forEach((link) => {
-  link.addEventListener("click", () => {
-    menuListe.classList.remove("visible");
-  });
+// Récupération du bouton hamburger et de la div menu-hamburger
+const hamburgerBtn = document.getElementById("hamburger-menu");
+const menuHamburger = document.getElementById("page-principale-menu-hamburger");
+
+// Ajout de l'événement click sur le bouton hamburger
+hamburgerBtn.addEventListener("click", function() {
+  // Si la div menu-hamburger est visible, on la masque, sinon on l'affiche
+  if (menuHamburger.style.display === "block") {
+    menuHamburger.style.display = "none";
+  } else {
+    menuHamburger.style.display = "block";
+  }
 });
