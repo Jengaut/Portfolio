@@ -4,22 +4,20 @@ html,
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 html {
   font: 100%/150% Poppins, Helvetica, Arial, sans-serif;
 }
 
-body {
-  margin: 0;
-}
 /*------------INDEX--------------------*/
 #background {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(to right, #007EA7 56%, #ccdbdc 50%);
+  background: linear-gradient(to right, #007ea7 56%, #ccdbdc 50%);
   width: 100%;
   height: 100%;
 }
@@ -46,7 +44,7 @@ ul li {
 }
 
 #nom {
-  color: #007EA7;
+  color: #007ea7;
 }
 
 #titre {
@@ -56,7 +54,7 @@ ul li {
   line-height: 3.7rem;
   text-transform: uppercase;
   text-align: center;
-  color: #007EA7;
+  color: #007ea7;
   top: 32%;
   left: 60%;
   font-size: 33;
@@ -139,7 +137,7 @@ ul li {
 #page-principale-menu ul li {
   list-style: none;
   text-decoration: none;
-  margin: .75rem .75rem .75rem 0;
+  margin: 0.75rem 0.75rem 0.75rem 0;
   padding: 2rem 0;
 }
 
@@ -154,18 +152,16 @@ ul li {
   list-style: none;
   color: white;
   text-transform: uppercase;
-  background-color: #007EA7;
+  background-color: #007ea7;
   border-radius: 0 2rem 2rem 0;
 }
 
 #hamburger-menu {
   display: none;
-  float: right;
-  border: none;
-  cursor: pointer;
-  background-color: #ccdbdc;
-  color: #003249;
-  font-size: 35;
+}
+
+#page-principale-menu-hamburger {
+  display: none;
 }
 
 #lang-index {
@@ -180,37 +176,132 @@ ul li {
   padding: 2.5rem;
   text-decoration: none;
   list-style: none;
-  color:#007EA7;
+  color: #007ea7;
   background-color: #ccdbdc;
-  border-radius: 0 50% 50% ;
+  border-radius: 0 50% 50%;
   font-size: 30;
   font-weight: bold;
 }
 
 .lang {
-  margin: 3rem 3rem;
   padding: 2.5rem;
   text-decoration: none;
   list-style: none;
-  color:#007EA7;
+  color: #007ea7;
   background-color: #ccdbdc;
-  border-radius: 0 50% 50% ;
+  border-radius: 0 50% 50%;
   font-size: 30;
   font-weight: bold;
 }
 
-/*------------autre page--------------------*/
+#iframes-container {
+  display: none;
+}
 
-h1 {
+/*------------------------------autre page-----------------------------------*/
+
+.pages h1 {
   width: auto;
+  text-align: center;
+  color: #ccdbdc;
+  background-color: #003249;
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+#haut-page {
+  margin: 2rem 0 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  margin: auto;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#menu ul {
+  display: flex;
+}
+
+#menu ul li a {
+  position: relative;
+  margin: 3rem;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  color: #007ea7;
+  font-size: large;
+  font-weight: 600;
+}
+
+#menu ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 0;
+  height: 2px;
+  background-color: #ccdbdc;
+  transition: all 0.3s ease-out;
+}
+#menu ul li a:hover::before {
+  width: 100%;
+}
+
+/* --------------------a propos de moi --------------------------*/
+
+#propos {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#propos img {
+  max-width: 500px;
+  height: 500px;
+}
+
+#propos p {
+  display: flex;
+  padding-left: 2rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 35rem;
+}
+
+#etude {
+  margin: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#etude img {
+  padding-left: 4rem;
+  width: 300px;
+  height: 300px;
+}
+
+#etude p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 4.5vw;
+  font-size: 1.3vw;
 }
 
 /* --------------------version telephone --------------------------*/
 
 @media screen and (max-width: 956px) {
-  body {
+  #fond {
+    width: 100%;
+    height: 100%;
     margin: 0;
     background-color: #003249;
   }
@@ -220,26 +311,26 @@ h1 {
   }
 
   #background {
-  border-radius: 0px 30vh 0px 30vh;
-  background: white;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 95%;
-}
+    border-radius: 0px 30vh 0px 30vh;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 95%;
+  }
 
-#mon-nom {
-  padding-top: .8rem;
-  padding-left: 0;
-  font-size: 2.7vw;
-  gap: 2vw;
-}
+  #mon-nom {
+    padding-top: 0.8rem;
+    padding-left: 0;
+    font-size: 2.7vw;
+    gap: 2vw;
+  }
 
-#prenom {
-  color: #007EA7;
-}
+  #prenom {
+    color: #007ea7;
+  }
 
   #flex {
     flex-direction: column;
@@ -257,21 +348,20 @@ h1 {
     z-index: 0;
   }
 
-  #page-principale-menu {
+  #page-principale-menu-hamburger {
     margin: 0;
     padding: 0;
     height: auto;
     width: 100%;
-    z-index: 0;
   }
 
-  #page-principale-menu ul {
+  #page-principale-menu-hamburger ul {
     display: none;
     width: 100%;
     margin-top: 10vh;
   }
 
-  #page-principale-menu ul.visible {
+  #page-principale-menu-hamburger ul.visible {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -279,14 +369,14 @@ h1 {
     height: 100;
   }
 
-  #page-principale-menu ul li {
+  #page-principale-menu-hamburger ul li {
     margin: 0;
     padding: 0;
     width: 100%;
     text-align: center;
   }
 
-  #page-principale-menu ul li a {
+  #page-principale-menu-hamburger ul li a {
     display: block;
     margin: 0;
     font-size: 1.5vh;
@@ -295,7 +385,43 @@ h1 {
     color: #fff;
     background-color: #003249;
     border-radius: 0;
-    z-index: 0;
+  }
+
+  #hamburger-menu {
+    display: block;
+    margin: 0;
+    float: right;
+    border: none;
+    cursor: pointer;
+    background-color: #ccdbdc;
+    color: #003249;
+    font-size: 35;
+  }
+
+  #hamburger-menu span {
+    background-color: #ccdbdc;
+  }
+
+
+  #page-principale-menu-hamburger{
+    float: right;
+    border: none;
+    cursor: pointer;
+    background-color: #ccdbdc;
+    color: #003249;
+    font-size: 35;
+  }
+
+  #page-principale-menu-hamburger ul.visible + #hamburger-menu {
+    color: #ccdbdc;
+  }  
+
+  #page-principale-menu-hamburger ul li:hover {
+    transform: scale(1);
+  }
+
+  #page-principale-menu {
+    display: none;
   }
 
   #lang-index {
@@ -303,7 +429,7 @@ h1 {
     margin: 0;
     z-index: 0;
   }
-  
+
   .lang-index {
     padding: 1rem;
     font-size: 15;
@@ -315,27 +441,34 @@ h1 {
     margin: 0;
     z-index: 0;
   }
-  
+
   .lang {
     padding: 1rem;
     font-size: 15;
     border-radius: 0;
   }
 
-  #hamburger-menu {
-    display: block;
-    margin: 0;
+  #iframes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
-  #hamburger-menu span {
-    background-color: #ccdbdc;
+  #telephone1,
+  #telephone2,
+  #telephone3 {
+    width: 100%;
+    height: 100%;
   }
 
-  #page-principale-menu ul.visible ~ #hamburger-menu {
-    color: #ccdbdc;
+  #menu {
+    display: none;
   }
 
-  #page-principale-menu ul li:hover {
-    transform: scale(1);
+  #lang {
+    display: none;
   }
 }

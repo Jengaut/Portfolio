@@ -1,5 +1,6 @@
 const pagePrincipale = document.getElementById("page-principale");
 const menuListe = document.querySelector("#page-principale-menu ul");
+const menuHamburger = document.querySelector("#page-principale-menu-hamburger")
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const titre = document.getElementById("titre");
 
@@ -8,20 +9,20 @@ pagePrincipale.addEventListener("mouseover", function () {
   titre.style.display = "none";
 });
 
-menuListe.addEventListener("mouseover", () => {
-  if (!menuListe.classList.contains("visible")) {
+menuHamburger.addEventListener("mouseover", () => {
+  if (!menuHamburger.classList.contains("visible")) {
     hamburgerMenu.style.transform = "scale(1)";
   }
 });
 
-menuListe.addEventListener("mouseout", () => {
-  if (!menuListe.classList.contains("visible")) {
+menuHamburger.addEventListener("mouseout", () => {
+  if (!menuHamburger.classList.contains("visible")) {
     hamburgerMenu.style.transform = "scale(1)";
   }
 });
 
 hamburgerMenu.addEventListener("click", () => {
-  menuListe.classList.toggle("visible");
+  menuHamburger.classList.toggle("visible");
 });
 
 menuListe.querySelectorAll("li a").forEach((link) => {
