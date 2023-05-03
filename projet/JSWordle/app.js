@@ -112,7 +112,7 @@ function checkTurn(enteredWord) {
     let gameOver = gameState.currentRow === 5;
 
     if(won) {
-        alert('yeah');
+        alert('Tu as réussit!');
         const gameContainer = document.getElementById('gameContainer');
         location.reload(); // reload the page
     } else if(gameOver) {

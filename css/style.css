@@ -2,8 +2,8 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   margin: 0;
 }
 
@@ -13,10 +13,6 @@ html {
 
 /*------------INDEX--------------------*/
 #background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: linear-gradient(to right, #007ea7 56%, #ccdbdc 50%);
   width: 100%;
   height: 100%;
@@ -297,20 +293,122 @@ ul li {
   font-size: 1.3vw;
 }
 
-/* --------------------developpement web --------------------------*/
-
-
-#jeux{
-  width: 60%;
-  height: 100%;
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-#github-username{
+#info p {
+  margin-left: 3rem;
+  background-color: #ccdbdc;
+  border-radius: .5rem;
+  padding: 1.7rem;
+  color: #003249;
+  font-weight: 600;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.button img{
+  margin-left: 3rem;
+  width: 70px;
+  background-color: #ccdbdc;
+  border-radius: .5rem;
+  padding: 2.5rem;
+}
+
+#github-info {
+  background-color: #ccdbdc;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#github-username {
   text-decoration: none;
   list-style: none;
   font-size: 20;
   color: #003249;
   font-weight: 800;
+}
+
+/* ------------------------Infographiste---- --------------------------*/
+
+.top {
+  text-align: center;
+  padding: 2rem 8rem;
+  color: #003249;
+}
+
+#carrousel {
+}
+
+#carrousel img {
+  width: 300px;
+  height: auto;
+}
+
+.titre-work {
+  background-color: #ccdbdc;
+  padding: 1rem;
+  margin: 0;
+  color: #003249;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccdbdc80;
+  padding: 2rem 4rem;
+  margin-bottom: 4rem;
+}
+
+.work p {
+  padding-right: 5rem;
+  padding-left: 1rem;
+  color: #003249;
+}
+/* --------------------developpement web --------------------------*/
+
+#centrer-jeux {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#centrer-jeux img {
+  width: 400px;
+  height: auto;
+  border: 2rem solid #ccdbdc;
+}
+
+#jeux {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+#coter {
+  padding: 2rem;
+  background-color: #ccdbdc;
+}
+
+#coter a {
+  text-decoration: underline;
+  color: #003249;
+  font-weight: 800;
+  font-size: 20;
+
 }
 
 /* --------------------version telephone --------------------------*/
@@ -328,14 +426,10 @@ ul li {
   }
 
   #background {
-    border-radius: 0px 30vh 0px 30vh;
+    margin: 0;
+    border-top: 1rem solid#003249;
+    border-radius: 0px 30vh 0px 0;
     background: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 95%;
   }
 
   #mon-nom {
@@ -381,23 +475,6 @@ ul li {
     border-radius: 0;
   }
 
-  #iframes-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #telephone1,
-  #telephone2,
-  #telephone3 {
-    width: 100%;
-    height: 100%;
-    border: 2rem solid #003249;
-  }
-
   #menu {
     display: none;
   }
@@ -406,54 +483,63 @@ ul li {
     display: none;
   }
 
-#hamburger-menu {
-  display: block;
-  margin: 0;
-  float: right;
-  border: none;
-  cursor: pointer;
-  background-color: #ccdbdc;
-  color: #003249;
-  font-size: 35;
-}
+  #hamburger-menu {
+    display: block;
+    margin: 0;
+    float: right;
+    border: none;
+    cursor: pointer;
+    background-color: #ccdbdc;
+    color: #003249;
+    font-size: 35;
+  }
 
-#page-principale-menu-hamburger {
-  display: none;
-  position:relative;
-  margin-top: 2vh;
-  top: 0;
-  right: 0;
-  background-color: #ccdbdc;
-  color: #003249;
-  width: 100%;
-  height: auto;
-  font-size: 35;
-}
+  #page-principale-menu-hamburger {
+    display: none;
+    position: relative;
+    margin-top: 2vh;
+    top: 0;
+    right: 0;
+    background-color: #ccdbdc;
+    color: #003249;
+    width: 100%;
+    height: auto;
+    font-size: 35;
+  }
 
-#page-principale-menu-hamburger nav {
-  margin: 0;
-  padding: 0;
-}
+  #page-principale-menu-hamburger nav {
+    margin: 0;
+    padding: 0;
+  }
 
-#page-principale-menu-hamburger ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  #page-principale-menu-hamburger ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-#page-principale-menu-hamburger li {
-  margin: 0;
-  padding: 0;
-}
+  #page-principale-menu-hamburger li {
+    margin: 0;
+    padding: 0;
+  }
 
-#page-principale-menu-hamburger a {
-  display: block;
-  color: #fff;
-  font-size: 1.5vh;
-  padding: 20px;
-  text-decoration: none;
-  background-color: #003249;
-  text-align: center;
-}
+  #page-principale-menu-hamburger a {
+    display: block;
+    color: #fff;
+    font-size: 1.5vh;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #003249;
+    text-align: center;
+  }
 
+  #iframes-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #telephone1, #telephone2, #telephone3 {
+    height: 100%;
+    margin-bottom: 20px;
+  }
 }

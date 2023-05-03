@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" media="screen">
-    <title>Document</title>
+    <title>Page principale</title>
 </head>
 
 <body>
@@ -45,9 +45,20 @@
                 </nav>
             </div>
             <section id="iframes-container">
-                <iframe id="telephone1" src="pages/perso-fr.html" frameborder="0"></iframe>
-                <iframe id="telephone2" src="pages/infographe-fr.html" frameborder="0"></iframe>
-                <iframe id="telephone3" src="pages/dev-web-fr.html" frameborder="0"></iframe>
+                <div id="telephone1"></div>
+                <div id="telephone2"></div>
+                <div id="telephone3"></div>
+                    <script>
+                        Promise.all([
+                            fetch('pages/perso-fr.html').then(response => response.text()),
+                            fetch('pages/infographe-fr.html').then(response => response.text()),
+                            fetch('pages/dev-web-fr.html').then(response => response.text())
+                        ]).then(function([telephone1Content, telephone2Content, telephone3Content]){
+                            document.querySelector('#telephone1').innerHTML = telephone1Content;
+                            document.querySelector('#telephone2').innerHTML = telephone2Content;
+                            document.querySelector('#telephone3').innerHTML = telephone3Content;
+                        });
+                    </script>
             </section>
         </div>
     </div>
