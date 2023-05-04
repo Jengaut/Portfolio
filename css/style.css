@@ -429,6 +429,7 @@ ul li {
     border-top: 1rem solid#003249;
     border-radius: 0px 30vh 0px 0;
     background: white;
+    width: 100%;
   }
 
   #mon-nom {
@@ -535,11 +536,13 @@ ul li {
   #iframes-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   #telephone1, #telephone2, #telephone3 {
     height: 100%;
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 
@@ -549,6 +552,7 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   #propos img {
@@ -556,13 +560,13 @@ ul li {
   }
 
   #propos p {
-    font-size: 2vw;
-    text-align: justify;
+    font-size: 10;
+    text-align: center;
     padding-left: 0;
   }
 
   #etude p {
-    font-size: 2vw;
+    font-size: 30;
   }
 
   .top h2 {
@@ -576,13 +580,28 @@ ul li {
 
 @media screen and (max-width: 860px) {
 
+  #propos {
+    margin: .5rem;
+  }
+
+  #propos img {
+    width: 300px;
+    height: auto;
+  }
+
   #etude {
     display: flex;
     flex-direction: column;
+    margin: 1rem;
   }
 
   #etude p {
-    font-size: 2vw;
+    font-size: 9;
+    line-height: 3;
+  }
+
+  #etude img {
+    padding-left: 0;
   }
 
   #info {
@@ -599,21 +618,42 @@ ul li {
     margin-left: 0;
   }
 
+  .top {
+    padding: 0;
+    padding: 1rem;
+  }
+
+  .top h2 {
+   font-size:large;
+   line-height: 1.5;
+  }
+  
+  .top p {
+    font-size: 10;
+  }
+
+  .titre-work {
+    margin: 0 1rem 0 1rem;
+  }
+
   .work {
     display: flex;
     flex-direction:column-reverse;
     align-items: center;
+    padding: 1rem 0;
+    margin: 0 1rem 1rem 1rem;
   }
 
   .work p {
-    font-size: 2.5vw;
-    width: 50vw;
+    font-size: 4vw;
+    width: 70vw;
     text-align: center;
-    padding-right: 0;
+    padding: 0;
   }
 
   #carrousel {
     margin-bottom: 1vh;
+    padding: 0;
   }
 
   #carrousel img {
@@ -627,7 +667,9 @@ ul li {
   }
 
   #jeux img {
-    width: 350px;
+    width: 200px;
+    height: auto;
+    border: 1rem solid #ccdbdc;
   }
 
 }
