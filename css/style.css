@@ -354,7 +354,7 @@ ul li {
 .titre-work {
   background-color: #ccdbdc;
   padding: 1rem;
-  margin: 0;
+  margin: 0 4rem 0 4rem;
   color: #003249;
 }
 
@@ -364,13 +364,12 @@ ul li {
   justify-content: center;
   align-items: center;
   background-color: #ccdbdc80;
-  padding: 2rem 4rem;
-  margin-bottom: 4rem;
+  padding: 2rem 3rem;
+  margin: 0 4rem 4rem 4rem;
 }
 
 .work p {
-  padding-right: 5rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
   color: #003249;
 }
 /* --------------------developpement web --------------------------*/
@@ -542,4 +541,93 @@ ul li {
     height: 100%;
     margin-bottom: 20px;
   }
+}
+
+@media screen and (max-width: 900px) {
+
+  #propos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #propos img {
+    margin-bottom: 2vh;
+  }
+
+  #propos p {
+    font-size: 2vw;
+    text-align: justify;
+    padding-left: 0;
+  }
+
+  #etude p {
+    font-size: 2vw;
+  }
+
+  .top h2 {
+    line-height: 3vh;
+  }
+
+  .top p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 860px) {
+
+  #etude {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #etude p {
+    font-size: 2vw;
+  }
+
+  #info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #info p {
+    margin-left: 0;
+  }
+
+  #info img {
+    margin-left: 0;
+  }
+
+  .work {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+
+  .work p {
+    font-size: 2.5vw;
+    width: 50vw;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #carrousel {
+    margin-bottom: 1vh;
+  }
+
+  #carrousel img {
+    width: 50vw;
+  }
+
+  #jeux {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccdbdc;
+  }
+
+  #jeux img {
+    width: 350px;
+  }
+
 }
