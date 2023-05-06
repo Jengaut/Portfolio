@@ -235,7 +235,7 @@ if (isset($_GET['remove'])) {
 
             <div class="panier">
                 <ul>
-                    <li><a href="panier.php" class="button"><img alt="panier" src="images/panier.png"></a></li>
+                    <li><a href="panier.html" class="button"><img alt="panier" src="images/panier.png"></a></li>
                 </ul>
             </div>
 

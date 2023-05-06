@@ -24,5 +24,5 @@ carrousels.forEach((carrousel) => {
     images[currentIndex].style.display = 'block';
   };
 
-  setInterval(nextImage, 3000);
+  setInterval(nextImage, 2000);
 });

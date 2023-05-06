@@ -541,6 +541,18 @@ ul li {
     margin-bottom: 20px;
     width: 100%;
   }
+
+  #jeux {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccdbdc;
+  }
+
+  #jeux video, #jeux img {
+    width: 250px;
+    height: auto;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -563,15 +575,24 @@ ul li {
   }
 
   #etude p {
-    font-size: 30;
+    font-size: 12;
   }
 
   .top h2 {
     line-height: 3vh;
   }
 
-  .top p {
-    text-align: center;
+  #jeux {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccdbdc;
+    padding-top: 2rem;
+  }
+
+  #jeux video, #jeux img {
+    width: 250px;
+    height: auto;
+    border: none;
   }
 }
 
@@ -627,6 +648,7 @@ ul li {
   
   .top p {
     font-size: 12;
+    text-align: center;
   }
 
   .titre-work {
@@ -648,25 +670,14 @@ ul li {
     padding: 0;
   }
 
-  .carrousel {
+  /* .carrousel {
     margin-bottom: 1vh;
     padding: 0;
   }
 
   .carrousel img {
-    width: 50vw;
-  }
-
-  #jeux {
-    display: flex;
-    flex-direction: column;
-    background-color: #ccdbdc;
-  }
-
-  #jeux video, #jeux img {
     width: 250px;
     height: auto;
-    border: none;
-  }
+  } */
 
 }

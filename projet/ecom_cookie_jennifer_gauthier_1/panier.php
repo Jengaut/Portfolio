@@ -111,7 +111,7 @@ if (isset($_GET['remove'])) {
 
         <div class="navigation">
             <ul>
-                <li><a href="index.php">Acceuil</a></li>
+                <li><a href="index.html">Acceuil</a></li>
             </ul>
         </div>
 
