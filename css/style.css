@@ -343,10 +343,7 @@ ul li {
   color: #003249;
 }
 
-#carrousel {
-}
-
-#carrousel img {
+.carrousel img {
   width: 300px;
   height: auto;
 }
@@ -382,8 +379,8 @@ ul li {
   height: 100%;
 }
 
-#centrer-jeux img {
-  width: 400px;
+#centrer-jeux video, #centrer-jeux img {
+  width: 500px;
   height: auto;
   border: 2rem solid #ccdbdc;
 }
@@ -560,7 +557,7 @@ ul li {
   }
 
   #propos p {
-    font-size: 10;
+    font-size: 12;
     text-align: center;
     padding-left: 0;
   }
@@ -596,7 +593,7 @@ ul li {
   }
 
   #etude p {
-    font-size: 9;
+    font-size: 12;
     line-height: 3;
   }
 
@@ -624,12 +621,12 @@ ul li {
   }
 
   .top h2 {
-   font-size:large;
+   font-size: large;
    line-height: 1.5;
   }
   
   .top p {
-    font-size: 10;
+    font-size: 12;
   }
 
   .titre-work {
@@ -645,18 +642,18 @@ ul li {
   }
 
   .work p {
-    font-size: 4vw;
+    font-size: 12;
     width: 70vw;
     text-align: center;
     padding: 0;
   }
 
-  #carrousel {
+  .carrousel {
     margin-bottom: 1vh;
     padding: 0;
   }
 
-  #carrousel img {
+  .carrousel img {
     width: 50vw;
   }
 
@@ -666,10 +663,10 @@ ul li {
     background-color: #ccdbdc;
   }
 
-  #jeux img {
-    width: 200px;
+  #jeux video, #jeux img {
+    width: 250px;
     height: auto;
-    border: 1rem solid #ccdbdc;
+    border: none;
   }
 
 }

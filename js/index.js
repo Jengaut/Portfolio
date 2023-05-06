@@ -26,15 +26,3 @@ hamburgerBtn.addEventListener("click", function() {
     menuHamburger.style.display = "block";
   }
 });
-
-var images = document.querySelectorAll('#carrousel img');
-var index = 0;
-
-setInterval(function() {
-  // cacher l'image courante
-  images[index].style.opacity = 0;
-  // passer à l'image suivante
-  index = (index + 1) % images.length;
-  // montrer la nouvelle image
-  images[index].style.opacity = 1;
-}, 5000);
