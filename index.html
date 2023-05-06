@@ -48,17 +48,17 @@
                 <div id="telephone1"></div>
                 <div id="telephone2"></div>
                 <div id="telephone3"></div>
-                    <script>
-                        Promise.all([
-                            fetch('pages/perso-fr.html').then(response => response.text()),
-                            fetch('pages/infographe-fr.html').then(response => response.text()),
-                            fetch('pages/dev-web-fr.html').then(response => response.text())
-                        ]).then(function([telephone1Content, telephone2Content, telephone3Content]){
-                            document.querySelector('#telephone1').innerHTML = telephone1Content;
-                            document.querySelector('#telephone2').innerHTML = telephone2Content;
-                            document.querySelector('#telephone3').innerHTML = telephone3Content;
-                        });
-                    </script>
+                <script>
+                    Promise.all([
+                        fetch('pages/perso-fr.html').then(response => response.text()),
+                        fetch('pages/infographe-fr.html').then(response => response.text()),
+                        fetch('pages/dev-web-fr.html').then(response => response.text())
+                    ]).then(function ([telephone1Content, telephone2Content, telephone3Content]) {
+                        document.querySelector('#telephone1').innerHTML = telephone1Content;
+                        document.querySelector('#telephone2').innerHTML = telephone2Content;
+                        document.querySelector('#telephone3').innerHTML = telephone3Content;
+                    });
+                </script>
             </section>
         </div>
     </div>

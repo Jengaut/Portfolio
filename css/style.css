@@ -542,10 +542,25 @@ ul li {
     width: 100%;
   }
 
+  #cacher {
+    display: none;
+  }
+
+  .carrousel {
+    margin-bottom: 1vh;
+    padding: 0;
+  }
+
+  .carrousel img {
+    width: 250px;
+    height: auto;
+  }
+
   #jeux {
     display: flex;
     flex-direction: column;
     background-color: #ccdbdc;
+    padding-top: 2rem;
   }
 
   #jeux video, #jeux img {
@@ -580,19 +595,6 @@ ul li {
 
   .top h2 {
     line-height: 3vh;
-  }
-
-  #jeux {
-    display: flex;
-    flex-direction: column;
-    background-color: #ccdbdc;
-    padding-top: 2rem;
-  }
-
-  #jeux video, #jeux img {
-    width: 250px;
-    height: auto;
-    border: none;
   }
 }
 
@@ -669,15 +671,5 @@ ul li {
     text-align: center;
     padding: 0;
   }
-
-  /* .carrousel {
-    margin-bottom: 1vh;
-    padding: 0;
-  }
-
-  .carrousel img {
-    width: 250px;
-    height: auto;
-  } */
 
 }

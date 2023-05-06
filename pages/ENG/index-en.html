@@ -7,34 +7,64 @@
     <link rel="stylesheet" href="../../css/style.css" media="screen">
     <title>Document</title>
 </head>
-<body>
-    <div id="background">
-        <div id="lang-index">
-            <a href="../../index.html" lang="fr" alt="francais" class="lang-index">FR</a>
-        </div>
-        <button id="hamburger-menu">&#9776;</button>
-        <div id="mon-nom">
-            <h1 id="prenom">JENNIFER</h1>
-            <h1 id="nom">GAUTHIER</h1>
-    </div>
-    <h1 id="titre">Want to learn</br>more? </br> Hover your</br>mouse over</br>my photo!</h1>
-        <div id="flex">
-            <div id="page-principale">
-                <img src="../../images/moi.png" class="page-principale-img" alt="my-photo">
-            </div>
 
-            <div id="page-principale-menu">
+<body>
+    <div id="fond">
+        <div id="background">
+            <div id="lang-index">
+                <a href="../../index.html" lang="fr" alt="francais" class="lang-index">FR</a>
+            </div>
+            <button id="hamburger-menu">&#9776;</button>
+            <div id="mon-nom">
+                <h1 id="prenom">JENNIFER</h1>
+                <h1 id="nom">GAUTHIER</h1>
+            </div>
+            <h1 id="titre">Want to learn</br>more? </br> Hover your</br>mouse over</br>my photo!</h1>
+            <div id="flex">
+                <div id="page-principale">
+                    <img src="../../images/moi.png" class="page-principale-img" alt="my-photo">
+                </div>
+
+                <div id="page-principale-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="perso-en.html">About me</a></li>
+                            <li><a href="infographe-en.html">Designer Experience</a></li>
+                            <li><a href="dev-web-en.html">Web Development Experience</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="page-principale-menu-hamburger">
                 <nav>
                     <ul>
-                        <li><a href="perso-en.html">About me</a></li>
-                        <li><a href="infographe-en.html">Designer Experience</a></li>
-                        <li><a href="dev-web-en.html">Web Development Experience</a></li>
+                        <li><a href="#telephone1">About me</a></li>
+                        <li><a href="#telephone2">Designer Experience</a></li>
+                        <li><a href="#telephone3">Web Development Experience</a></li>
                     </ul>
                 </nav>
             </div>
+            <section id="iframes-container">
+                <div id="telephone1"></div>
+                <div id="telephone2"></div>
+                <div id="telephone3"></div>
+                <script>
+                    Promise.all([
+                        fetch('perso-en.html').then(response => response.text()),
+                        fetch('infographe-en.html').then(response => response.text()),
+                        fetch('dev-web-en.html').then(response => response.text())
+                    ]).then(function ([telephone1Content, telephone2Content, telephone3Content]) {
+                        document.querySelector('#telephone1').innerHTML = telephone1Content;
+                        document.querySelector('#telephone2').innerHTML = telephone2Content;
+                        document.querySelector('#telephone3').innerHTML = telephone3Content;
+                    });
+                </script>
+            </section>
         </div>
     </div>
-    <script src="../../js/javascript.js"></script>
+
+    <script src="../../js/index.js"></script>
+    <script src="../../js/app.js"></script>
 </body>
 
 </html>
