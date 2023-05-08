@@ -16,5 +16,5 @@ window.onload = function() {
       document.getElementById('github-username').innerHTML = username;
       document.getElementById('github-username').setAttribute('href', profileUrl);
     })
-    .catch(error => alert(error.message));
+    .catch(error => console.error(error));
 }
