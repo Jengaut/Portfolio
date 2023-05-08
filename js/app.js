@@ -15,4 +15,4 @@ fetch(url, options)
     document.getElementById("github-username").innerHTML = username;
     document.getElementById("github-username").setAttribute("href", profileUrl);
   })
-  // .catch((error) => console.error(error));
+  .catch((error) => console.error(error));
