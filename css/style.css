@@ -433,11 +433,11 @@ ul li {
   }
 
   #mon-nom {
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-left: 0;
     font-size: 2.7vw;
     gap: 2vw;
-    justify-content: center;
+    width: 100%;
   }
 
   #prenom {
