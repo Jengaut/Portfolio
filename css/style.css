@@ -303,10 +303,15 @@ ul li {
   background-color: #ccdbdc;
   border-radius: .5rem;
   padding: 1.7rem;
-  color: #003249;
-  font-weight: 600;
   text-align: center;
   line-height: 3rem;
+}
+
+#info p a {
+  color: #003249;
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
 }
 
 .button img{
@@ -443,6 +448,8 @@ ul li {
     justify-content: initial;
     position: static;
     transform: none;
+    padding-top: 0;
+    padding-left: 0;
   }
 
   #page-principale {
