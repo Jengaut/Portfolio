@@ -437,6 +437,7 @@ ul li {
     padding-left: 0;
     font-size: 2.7vw;
     gap: 2vw;
+    justify-content: center;
   }
 
   #prenom {
