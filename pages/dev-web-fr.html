@@ -30,7 +30,7 @@
                 <div id="coter">
                     <a href="../projet/JSSnakeGame/index.html">Projet Snake (site web)</a>
                     <p>JSsnake est un jeu que j'ai créé en utilisant JavaScript et CSS avec un design minimaliste. Il
-                        est basé sur le jeu classique Snake, où le joueur doit contrôler 
+                        est basé sur le jeu classique Snake, où le joueur doit contrôler
                         un serpent en mouvement pour éviter les obstacles
                         et manger des aliments pour grandir.</p>
                 </div>
@@ -41,7 +41,7 @@
                 <div id="coter">
                     <a href="../projet/JSWordle/index.html">Projet Wordle (site web)</a>
                     <p>JSWordle est un jeu de mots basé sur Mastermind que j'ai créé avec JavaScript et CSS avec un
-                        design minimaliste. Les joueurs doivent deviner un mot en utilisant 
+                        design minimaliste. Les joueurs doivent deviner un mot en utilisant
                         le moins de tentatives possible.</p>
                 </div>
             </div>
@@ -69,6 +69,20 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function checkScreenWidth() {
+            if (window.innerWidth < 956) {
+                window.location.href = "../index.html";
+            }
+        }
+
+        window.addEventListener('load', function () {
+            checkScreenWidth();
+        });
+
+        window.addEventListener('resize', checkScreenWidth);
+    </script>
 </body>
 
 </html>

@@ -63,9 +63,17 @@
 
     <script src="../js/app.js"></script>
     <script>
-        if (window.innerWidth < 956) {
-            window.location.href = "https://jennifergauthier.netlify.app/index.html";
+        function checkScreenWidth() {
+            if (window.innerWidth < 956) {
+                window.location.href = "../index.html";
+            }
         }
+
+        window.addEventListener('load', function () {
+            checkScreenWidth();
+        });
+
+        window.addEventListener('resize', checkScreenWidth);
     </script>
 </body>
 

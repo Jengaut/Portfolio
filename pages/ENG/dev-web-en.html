@@ -68,6 +68,20 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function checkScreenWidth() {
+            if (window.innerWidth < 956) {
+                window.location.href = "index-en.html";
+            }
+        }
+
+        window.addEventListener('load', function () {
+            checkScreenWidth();
+        });
+
+        window.addEventListener('resize', checkScreenWidth);
+    </script>
 </body>
 
 </html>

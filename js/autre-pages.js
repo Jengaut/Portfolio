@@ -26,3 +26,10 @@ carrousels.forEach((carrousel) => {
 
   setInterval(nextImage, 2000);
 });
+
+if (window.innerWidth < 956) {
+  var url = window.location.pathname;
+  var indexFileName = "../index.html";
+  
+  window.location.replace(redirectTo);
+}
