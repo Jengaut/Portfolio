@@ -4,68 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
     <title>Page principale</title>
 </head>
 
 <body>
     <div id="fond">
         <div id="background">
-            <div id="lang-index">
-                <a href="pages/ENG/index-en.html" lang="en" alt="english" class="lang-index">EN</a>
-            </div>
-            <button id="hamburger-menu">&#9776;</button>
-            <div id="mon-nom">
-                <h1 id="prenom">JENNIFER</h1>
-                <h1 id="nom">GAUTHIER</h1>
-            </div>
-            
-            <h1 id="titre">Envie d'en</br>savoir plus ? </br> Passez votre</br>souris sur</br>ma photo !</h1>
-            <div id="flex">
-                <div id="page-principale">
-                    <img src="images/moi.png" class="page-principale-img" alt="ma-photo">
-                </div>
-
-                <div id="page-principale-menu">
-                    <nav>
-                        <ul>
-                            <li><a href="pages/perso-fr.html">À propos de moi</a></li>
-                            <li><a href="pages/infographe-fr.html">Expérience Infographiste</a></li>
-                            <li><a href="pages/dev-web-fr.html">Expérience Developpement Web</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div id="page-principale-menu-hamburger">
-                <nav>
-                    <ul>
-                        <li><a href="#telephone1">À propos de moi</a></li>
-                        <li><a href="#telephone2">Expérience Infographiste</a></li>
-                        <li><a href="#telephone3">Expérience Developpement Web</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <section id="iframes-container">
-                <div id="telephone1"></div>
-                <div id="telephone2"></div>
-                <div id="telephone3"></div>
-                <script>
-                    Promise.all([
-                        fetch('pages/perso-fr.html').then(response => response.text()),
-                        fetch('pages/infographe-fr.html').then(response => response.text()),
-                        fetch('pages/dev-web-fr.html').then(response => response.text())
-                    ]).then(function ([telephone1Content, telephone2Content, telephone3Content]) {
-                        document.querySelector('#telephone1').innerHTML = telephone1Content;
-                        document.querySelector('#telephone2').innerHTML = telephone2Content;
-                        document.querySelector('#telephone3').innerHTML = telephone3Content;
-                    });
-                </script>
-            </section>
+            <div class="container">
+            <p>En Construction... / Under construction...</p>
+            <img src="/images/under-construction-icon.png" alt="construction">
         </div>
     </div>
-
-    <script src="js/index.js"></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>
