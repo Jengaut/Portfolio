@@ -3,7 +3,7 @@ const carrousels = document.querySelectorAll('.carrousel');
 carrousels.forEach((carrousel) => {
   let currentIndex = 0;
 
-  const images = carrousel.querySelectorAll('img');
+  const images = carrousel.querySelectorAll('.carrousel img');
 
   images.forEach((image, index) => {
     if (index !== currentIndex) {

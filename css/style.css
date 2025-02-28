@@ -11,9 +11,19 @@ html {
   font: 100%/150% Poppins, Helvetica, Arial, sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
 /*------------INDEX--------------------*/
 #background {
-  background: linear-gradient(to right, #007ea7 56%, #ccdbdc 50%);
+  background: linear-gradient(to bottom, #007ea7 25%, #ccdbdc 50%);
   width: 100%;
   height: 100%;
 }
@@ -25,21 +35,11 @@ ul li {
 
 #mon-nom {
   margin: auto;
-  padding-left: 14%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-  padding-top: 7rem;
+  text-align: center;
+  padding-top: 2rem;
   font-size: 33;
-}
-
-#prenom {
   color: #ccdbdc;
-}
-
-#nom {
-  color: #007ea7;
+  line-height: 2rem;
 }
 
 #titre {
@@ -57,17 +57,13 @@ ul li {
 
 #flex {
   margin: auto;
-  padding-left: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 42rem;
-  transform: translateY(-50%);
 }
 
 #page-principale {
-  position: relative;
   width: 475px;
   height: 475px;
   overflow: hidden;
@@ -77,11 +73,9 @@ ul li {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  z-index: 1;
 }
 
 .page-principale-img {
-  display: flex;
   max-width: 100%;
   height: auto;
   margin-top: -20%;
@@ -103,36 +97,21 @@ ul li {
   }
 }
 
-#page-principale-menu {
-  margin-left: 4vw;
-  padding: 0;
-  float: right;
-  height: 630px;
-  width: 399px;
-  z-index: -1;
-}
-
 #page-principale-menu ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: right;
   padding: 0;
   height: 600px;
-  transform: translateX(-125%);
-  transition: transform 0.5s ease-in-out;
-  text-align: left;
-}
-
-#page-principale-menu ul.visible {
-  transform: translateX(0%);
+  text-align: right;
 }
 
 #page-principale-menu ul li {
   list-style: none;
   text-decoration: none;
   margin: 0.75rem 0.75rem 0.75rem 0;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 #page-principale-menu ul li:hover {
@@ -140,14 +119,14 @@ ul li {
 }
 
 #page-principale-menu ul li a {
-  font-size: 20;
-  padding: 1.8rem 2rem;
+  font-size: 15;
+  padding: 1rem 1rem;
   text-decoration: none;
   list-style: none;
   color: white;
   text-transform: uppercase;
   background-color: #007ea7;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 2rem 0 2rem 0;
 }
 
 #hamburger-menu {
@@ -168,23 +147,23 @@ ul li {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 2.5rem;
+  padding: 1.5rem;
   text-decoration: none;
   list-style: none;
   color: #007ea7;
   background-color: #ccdbdc;
-  border-radius: 0 50% 50%;
-  font-size: 30;
+  border-radius: 0 5% 50% 5%;
+  font-size: 20;
   font-weight: bold;
 }
 
 .lang {
-  padding: 2.5rem;
+  padding: 2rem;
   text-decoration: none;
   list-style: none;
   color: #007ea7;
   background-color: #ccdbdc;
-  border-radius: 0 50% 50%;
+  border-radius: 0 5% 50% 5%;
   font-size: 30;
   font-weight: bold;
 }
@@ -412,7 +391,7 @@ ul li {
 
 /* --------------------version telephone --------------------------*/
 
-@media screen and (max-width: 956px) {
+ @media screen and (max-width: 956px) {
   #fond {
     width: 100%;
     height: 100%;
@@ -425,11 +404,11 @@ ul li {
   }
 
   #background {
+    background: white;
     margin: 0;
     border-top: 1rem solid#003249;
-    border-radius: 0px 30vh 0px 0;
-    background: white;
     width: 100%;
+    height: 100%;
   }
 
   #mon-nom {
@@ -441,7 +420,7 @@ ul li {
   }
 
   #prenom {
-    color: #007ea7;
+    color: #003249;
   }
 
   #flex {
@@ -678,4 +657,4 @@ ul li {
     padding: 0;
   }
 
-}
+} 
